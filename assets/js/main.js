@@ -564,7 +564,7 @@ document.querySelector("#list").addEventListener("change", filterChange)
         let newCart = [];
         for(let a of articlesInCart){
             if(a.id == check){
-                if(parseInt(a.quantity) > 1){
+                if(parseInt(a.quantity) > 0){
                     a.quantity = parseInt(a.quantity) + 1;
                 }
                 else{
