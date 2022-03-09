@@ -80,7 +80,7 @@
         "discount":null,
         "suggested": false,
         "categoryId":[1],
-        "brandId":4,
+        "brandId":2,
         "text":"6PAK WHEY ISOLATE is a high quality protein supplement designed to be functional and delicious. It is characterized by an extremely high level of protein, and the content of fats and carbohydrates is only in traces. Whey protein isolate is considered one of the best sources of protein with extremely fast absorption and ideal amino acid composition. That is why this protein is recommended for use after training, when every minute is important."
     },
     {
@@ -401,7 +401,7 @@
         "img":"assets/images/img29.jpg",
         "discount":2,
         "categoryId":[5],
-        "brandId":5,
+        "brandId":3,
         "suggested": false,
         "text":"Battery Nutrition BCAA is used during workouts for extra energy and endurance and for improved recovery and muscle building. As you twist, mold, crunch and pump your body, Battery BCAA supplies amino acids in their free form and has a high concentration of branched chain amino acids, BCAA, so that your muscles can grow and recover."
     },
