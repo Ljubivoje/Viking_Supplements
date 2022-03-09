@@ -1,0 +1,22 @@
+[
+    {
+        "id":1,
+        "name":"Whey Protein"
+    },
+    {
+        "id":2,
+        "name":"Creatine"
+    },
+    {
+        "id":3,
+        "name":"Amino Acids"
+    },
+    {
+        "id":4,
+        "name":"Vitamins"
+    },
+    {
+        "id":5,
+        "name":"Other suplements"
+    }
+]

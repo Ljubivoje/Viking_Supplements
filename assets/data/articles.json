@@ -1,0 +1,422 @@
+[
+    {
+        "id":1,
+        "name":"BCAA ZERO amino acid drink powder",
+        "price":{
+            "oldPrice":null,
+            "newPrice":29.90
+        },
+        "img":"assets/images/img1.jpg",
+        "discount":null,
+        "suggested": false,
+        "categoryId":[3],
+        "brandId":1,
+        "text":"SUGAR-FREE, FLAVOURED AMINO ACID FOOD SUPPLEMENT DRINK POWDER, CONTAINING 6000 MG BCAA AND 2 MG VITAMIN B6 PER SERVING"
+    },
+    {
+        "id":2,
+        "name":"100% Creatine Monohydrate",
+        "price":{
+            "oldPrice":null,
+            "newPrice":18.90
+        },
+        "img":"assets/images/img2.jpg",
+        "discount":null,
+        "suggested": true,
+        "categoryId":[2],
+        "brandId":1,
+        "text":"100% Creatine Monohydrate is made from pure powdered creatine monohydrate.Due to the tasteless powder form, it can be easily mixed with other food supplements, e.g. weight gainers or protein-based beverage powders."
+    },
+    {
+        "id":3,
+        "name":"Black Blood CAF+",
+        "price":{
+            "oldPrice":null,
+            "newPrice":36.90
+        },
+        "img":"assets/images/img3.jpg",
+        "discount":null,
+        "suggested": false,
+        "categoryId":[5],
+        "brandId":1,
+        "text":"Pre-training formula with 400 mg caffeine, nox complex content, creatin free, for extreme needs."
+    },
+    {
+        "id":4,
+        "name":"Iso Whey Zero",
+        "price":{
+            "oldPrice":null,
+            "newPrice":69.90
+        },
+        "img":"assets/images/img4.jpg",
+        "discount":null,
+        "suggested": true,
+        "categoryId":[1],
+        "brandId":1,
+        "text":"Special quality whey protein isolate with Native Whey Isolate, added BCAA and glutamine amino acids."
+    },
+    {
+        "id":5,
+        "name":"Vitamin Complex - 60 capsules",
+        "price":{
+            "oldPrice":15.00,
+            "newPrice":13.50
+        },
+        "img":"assets/images/img5.jpg",
+        "discount":2,
+        "categoryId":[4],
+        "brandId":1,
+        "suggested": false,
+        "text":"FOOD SUPPLEMENT CAPSULES WITH AN OPTIMUM MULTIVITAMIN AND MINERAL CONTENT."
+    },
+    {
+        "id":6,
+        "name":"WHEY ISOLATE - 6PAK",
+        "price":{
+            "oldPrice":null,
+            "newPrice":80.70
+        },
+        "img":"assets/images/img6.jpg",
+        "discount":null,
+        "suggested": false,
+        "categoryId":[1],
+        "brandId":4,
+        "text":"6PAK WHEY ISOLATE is a high quality protein supplement designed to be functional and delicious. It is characterized by an extremely high level of protein, and the content of fats and carbohydrates is only in traces. Whey protein isolate is considered one of the best sources of protein with extremely fast absorption and ideal amino acid composition. That is why this protein is recommended for use after training, when every minute is important."
+    },
+    {
+        "id":7,
+        "name":"6PAK Nutrition - Effective Line Zinc - 90 tabl.",
+        "price":{
+            "oldPrice":11.40,
+            "newPrice":10.26
+        },
+        "img":"assets/images/img7.jpg",
+        "discount":2,
+        "categoryId":[4],
+        "brandId":2,
+        "suggested": false,
+        "text":"6PAK Nutrition Zinc is a supplement based on an organic form of zinc with high bioavaiablity. Zinc is an element that determines the proper functioning of endocrine and immune systems, as well as supports metabolic processes."
+    },
+    {
+        "id":8,
+        "name":"6PAK CRAZE SHOT",
+        "price":{
+            "oldPrice":null,
+            "newPrice":1.30
+        },
+        "img":"assets/images/img8.jpg",
+        "discount":null,
+        "categoryId":[5],
+        "brandId":2,
+        "suggested": false,
+        "text":"6PAK CRAZE SHOT contains a powerful dose of caffeine with beta-alanine, taurine and choline in a skillfully balanced proportion that guarantees maximum performance. Every workout, even on those days when you are not ready, will be done in full!"
+    },
+    {
+        "id":9,
+        "name":"6PAK Gain Pak 3kg",
+        "price":{
+            "oldPrice":null,
+            "newPrice":42.30
+        },
+        "img":"assets/images/img9.jpg",
+        "discount":null,
+        "categoryId":[1],
+        "brandId":2,
+        "suggested": false,
+        "text":"6PAK Nutrition Gain Pak allows you to follow a precisely planned diet, making the muscle building process faster and more effective"
+    },
+    {
+        "id":10,
+        "name":"Battery whey Protein - Vanila",
+        "price":{
+            "oldPrice":null,
+            "newPrice":1.50
+        },
+        "img":"assets/images/img10.jpg",
+        "discount":null,
+        "categoryId":[1],
+        "brandId":3,
+        "suggested": true,
+        "text":"BATTERY WHEY is an ideal supplement for active individuals, who want to speed up regeneration, gain muscle mass and improve body capacity. Battery Whey is a perfect protein formula with very high biological value. It contains essential amino acids (EAAs) as well as branched chain amino acids (BCAAs)"
+    },
+    {
+        "id":11,
+        "name":"Iso-fuji® yamamoto nutrition protein 2 kg",
+        "price":{
+            "oldPrice":91.30,
+            "newPrice":77.61
+        },
+        "img":"assets/images/img11.jpg",
+        "discount":3,
+        "categoryId":[1],
+        "brandId":4,
+        "suggested": false,
+        "text":"Iso-FUJI® - Additional insulation containing insulation, ie individual ultrafiltration and microfiltration Volactive® Ultra Whey KSP.Microfiltration (CMF) is the most complex process for raw material-based protein isolation, but it is also the one that has the highest integrity and the presence of bioactive protein fractions, which determine protein quality."
+    },
+    {
+        "id":12,
+        "name":"Crea mass 500g - monohydrate",
+        "price":{
+            "oldPrice":null,
+            "newPrice":22.5
+        },
+        "img":"assets/images/img12.jpg",
+        "discount":null,
+        "categoryId":[2],
+        "brandId":4,
+        "suggested": false,
+        "text":"A dietary supplement that provides 100% creatine monohydrate, it is recommended for adults who engage in intense physical exercise."
+    },
+    {
+        "id":13,
+        "name":"ZERO BAR 50 GR",
+        "price":{
+            "oldPrice":null,
+            "newPrice":2.25
+        },
+        "img":"assets/images/img13.jpg",
+        "discount":null,
+        "categoryId":[5,1],
+        "brandId":1,
+        "suggested": false,
+        "text":"This protein bar is suitable for consumption after training, due to the high amount of protein, and can also be used as a meal replacement because it contains all the necessary nutrients and tastes great."
+    },
+    {
+        "id":14,
+        "name":"Vegan Protein Bar",
+        "price":{
+            "oldPrice":null,
+            "newPrice":2.50
+        },
+        "img":"assets/images/img14.jpg",
+        "discount":null,
+        "categoryId":[5,1],
+        "brandId":1,
+        "suggested": false,
+        "text":"Gluten-free vegan protein bar with sweeteners and no added sugar*."
+    },
+    {
+        "id":15,
+        "name":"Super Fat Burner 30 capsules",
+        "price":{
+            "oldPrice":null,
+            "newPrice":23.90
+        },
+        "img":"assets/images/img15.jpg",
+        "discount":null,
+        "categoryId":[5],
+        "brandId":1,
+        "suggested": false,
+        "text":"Caffeine-free dietary supplement tablets with L-carnitine, CLA, HCA, green tea extract, inulin, amino acids, vitamins and minerals."
+    },
+    {
+        "id":16,
+        "name":"Arthro Guard 120 tablets",
+        "price":{
+            "oldPrice":null,
+            "newPrice":28.90
+        },
+        "img":"assets/images/img16.jpg",
+        "discount":null,
+        "categoryId":[5],
+        "brandId":1,
+        "suggested": true,
+        "text":"FOOD SUPPLEMENT TABLETS WITH GLUCOSAMINE, CHONDROITIN, MSM, MINERALS AND HERB EXTRACTS."
+    },
+    {
+        "id":17,
+        "name":"Vegan Protein 500gm",
+        "price":{
+            "oldPrice":null,
+            "newPrice":21.90
+        },
+        "img":"assets/images/img17.jpg",
+        "discount":null,
+        "categoryId":[1],
+        "brandId":1,
+        "suggested": true,
+        "text":"Flavoured plant protein drink powder with goji and acai berry powder, quinoa flour and sweeteners."
+    },
+    {
+        "id":18,
+        "name":"Protein Bar 70 g",
+        "price":{
+            "oldPrice":2.50,
+            "newPrice":2.37
+        },
+        "img":"assets/images/img18.jpg",
+        "discount":1,
+        "categoryId":[1,5],
+        "brandId":1,
+        "suggested": false,
+        "text":"Coated slice with protein, no added sugar *, with sweeteners."
+    },
+    {
+        "id":19,
+        "name":"Mega Omega 3 90 softgel capsules",
+        "price":{
+            "oldPrice":null,
+            "newPrice":12.90
+        },
+        "img":"assets/images/img19.jpg",
+        "discount":null,
+        "categoryId":[5],
+        "brandId":1,
+        "suggested": true,
+        "text":"Nutritional supplement in softgel capsules having 70% EPA and DHA Omega-3 fatty acid content"
+    },
+    {
+        "id":20,
+        "name":"6PAK PROTEIN WAFER",
+        "price":{
+            "oldPrice":null,
+            "newPrice":1.70
+        },
+        "img":"assets/images/img20.jpg",
+        "discount":null,
+        "categoryId":[1,5],
+        "brandId":4,
+        "suggested": false,
+        "text":"6PAK Protein Wafer is a crunchy waffle with a delicious filling rich in protein and topped with chocolate. 12 grams of protein (30%) from whey protein concentrate, in each package, and a minimum amount of simple sugar (0.24g-1.1g) will allow you to enjoy sweets without a guilty conscience!"
+    },
+    {
+        "id":21,
+        "name":"Maca 60 mega capsules",
+        "price":{
+            "oldPrice":null,
+            "newPrice":17.90
+        },
+        "img":"assets/images/img21.jpg",
+        "discount":null,
+        "categoryId":[3],
+        "brandId":1,
+        "suggested": false,
+        "text":"Dietary supplement capsules containing Maca root extract.Maca is a wild-growing tuberous plant from Peru, which is rich in phytonutrients, amino acids and fatty acids, but it also contains vitamins and minerals."
+    },
+    {
+        "id":22,
+        "name":"ZMB 60 capsules",
+        "price":{
+            "oldPrice":null,
+            "newPrice":13.90
+        },
+        "img":"assets/images/img22.jpg",
+        "discount":null,
+        "categoryId":[3],
+        "brandId":1,
+        "suggested": false,
+        "text":"Food supplement capsules with zinc, magnesium and vitamin B6.ZMB is a synergistic formula to support the optimization of testosterone level. Its 3 main components are zinc, magnesium and vitamin B6."
+    },
+    {
+        "id":23,
+        "name":"Vitamins & Minerals 90 tablets",
+        "price":{
+            "oldPrice":12.90,
+            "newPrice":12.25
+        },
+        "img":"assets/images/img23.jpg",
+        "discount":1,
+        "categoryId":[3],
+        "brandId":2,
+        "suggested": false,
+        "text":"Dietary product: a strong anti-oxidant with a positive effect on the functioning of the immune system."
+    },
+    {
+        "id":24,
+        "name":"6PAK bands for exercice",
+        "price":{
+            "oldPrice":30.00,
+            "newPrice":27.00
+        },
+        "img":"assets/images/img24.jpg",
+        "discount":2,
+        "categoryId":[5],
+        "brandId":2,
+        "suggested": false,
+        "text":"6PAK mini loop resistance bands work to strengthen, stabilize and tone muscles. Perfect for physical therapy and rehabilitation, the loop resistance bands allow progressive workouts with five resistance levels and multiple combinations. Use the mini loop and straight bands at home, the gym or the office. Easily store and carry all six bands in the included mesh travel bag."
+    },
+    {
+        "id":25,
+        "name":"BATTERY Carnitine 60 capsules",
+        "price":{
+            "oldPrice":null,
+            "newPrice":10.60
+        },
+        "img":"assets/images/img25.jpg",
+        "discount":null,
+        "categoryId":[5],
+        "brandId":3,
+        "suggested": false,
+        "text":"L-Carnitine is known as an amino acid, which stimulates the burning of fat in the body. Research shows that its form of L-tartrate (used in this product) accelerates muscle regeneration and reduces the subsequent occurrence of muscle pain (or 'muscle inflammation'). Due to the fact that the needs for L-carnitine in the body are often greater than its production, it is recommended to add L-carnitine in the form of a dietary supplement."
+    },
+    {
+        "id":26,
+        "name":"CREATINE MICRONIZED 634g OPTIMUM",
+        "price":{
+            "oldPrice":null,
+            "newPrice":23.90
+        },
+        "img":"assets/images/img26.jpg",
+        "discount":null,
+        "categoryId":[2],
+        "brandId":5,
+        "suggested": true,
+        "text":"100 Percent pure creatine monohydrate powder for extra performance support*. 3 g of creatine per each serving.Increases physical performance in successive bursts of short-term, high-intensity exercise*"
+    },
+    {
+        "id":27,
+        "name":"Opti-Men 150 tablets",
+        "price":{
+            "oldPrice":null,
+            "newPrice": 41.90
+        },
+        "img":"assets/images/img27.jpg",
+        "discount":null,
+        "suggested": false,
+        "categoryId":[5],
+        "brandId":5,
+        "text":"Vitamin C, Vitamin D and Zinc Provide Immune Support along with Vitamin E.High potency multivitamin for active men, 75+ ingredients in 4 performance blends"
+    },
+    {
+        "id":28,
+        "name":"Optimum Nutrition Instantized BCAA",
+        "price":{
+            "oldPrice":null,
+            "newPrice":43.99
+        },
+        "img":"assets/images/img28.jpg",
+        "discount":null,
+        "categoryId":[3],
+        "brandId":3,
+        "suggested": false,
+        "text":"Before training, you want energy and focus. After a workout there is a protein shake that allows for muscle growth and recovery. In the gym, during training, Gold Standard BCAA helps you during intense training by boosting your immunity and reducing fatigue to be ready for the next workout. The new Gold Standard BCAA Train + Sustain powder is designed to be very drinkable, with mild flavors, which you will sip during long workouts. This is the new Gold Standard for supplementation during training. Stay in the game!"
+    },
+    {
+        "id":29,
+        "name":"BCAA",
+        "price":{
+            "oldPrice":24.99,
+            "newPrice":22.50
+        },
+        "img":"assets/images/img29.jpg",
+        "discount":2,
+        "categoryId":[5],
+        "brandId":5,
+        "suggested": false,
+        "text":"Battery Nutrition BCAA is used during workouts for extra energy and endurance and for improved recovery and muscle building. As you twist, mold, crunch and pump your body, Battery BCAA supplies amino acids in their free form and has a high concentration of branched chain amino acids, BCAA, so that your muscles can grow and recover."
+    },
+    {
+        "id":30,
+        "name":"Grenade 50 caliber Pre Workout 580g",
+        "price":{
+            "oldPrice":null,
+            "newPrice":49.90
+        },
+        "img":"assets/images/img30.jpg",
+        "discount":null,
+        "categoryId":[5],
+        "brandId":3,
+        "suggested": false,
+        "text":"Explosive power, energy and endurance.With citrulline, creatine, amino acids and caffeine.Over 20 ingredients in effective doses, proven by studies.Use as 'ammunition' 30 minutes before training"
+    }
+]
