@@ -48,7 +48,7 @@ window.onload=function(){
             numberOfArticles() 
         })
     }
-    if(url == "/" || url == "/shop.html"){
+    if(url == "/Viking_Supplements/shop.html"){
         numberOfArticles() 
         ajaxCallBack("assets/data/brands.json",function(result){
             ispisBrendova(result)
@@ -70,7 +70,7 @@ document.querySelector("#rangeValue").addEventListener("input", filterChange)
 document.querySelector("#search").addEventListener("keyup",filterChange)
 document.querySelector("#list").addEventListener("change", filterChange)
     }
-    if(url == "/" || url == "/contact.html"){
+    if(url == "/Viking_Supplements/contact.html"){
         ajaxCallBack("assets/data/menu.json",function(result){
             navMenu(result, ".menu-list")
             navMenu(result, ".list")
@@ -120,7 +120,7 @@ document.querySelector("#list").addEventListener("change", filterChange)
 	}
     });	
     }
-    if(url == "/" || url == "/cart.html"){
+    if(url == "/Viking_Supplements/cart.html"){
         ajaxCallBack("assets/data/articles.json",function(result){
             arrayArticles = getItemFromLocalStorage("articles");
             articlesInCart = getItemFromLocalStorage('cart')
@@ -206,7 +206,7 @@ document.querySelector("#list").addEventListener("change", filterChange)
         }
         });  
     }
-    if(url == "/" || url == "/about.html"){
+    if(url == "/Viking_Supplements/about.html"){
         ajaxCallBack("assets/data/menu.json",function(result){
             navMenu(result, ".menu-list")
             navMenu(result, ".list")
