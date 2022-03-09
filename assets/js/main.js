@@ -37,7 +37,7 @@ window.onscroll = ()=>{
 }
 window.onload=function(){
     let url = window.location.pathname;
-    if(url == "/" || url == "https://ljubivoje.github.io/Viking_Supplements/index.html"){
+    if(url == "https://ljubivoje.github.io/Viking_Supplements/" || url == "https://ljubivoje.github.io/Viking_Supplements/index.html"){
         numberOfArticles()
         ajaxCallBack("assets/data/articles.json",function(result){
             ipisItems(result)  
