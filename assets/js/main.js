@@ -507,6 +507,7 @@ document.querySelector("#list").addEventListener("change", filterChange)
     }
         function cartCheck(){
         let total = 0;
+	let html = `<table><tr><td colspan="6"><h4>The cart is empty</h4></td></tr></table>`;
         if(articlesInCart != undefined || articlesInCart!=null){
             let counter = 1;
             html = "<table>";
@@ -529,7 +530,7 @@ document.querySelector("#list").addEventListener("change", filterChange)
                 }
             }
             if(total==0){
-                html += `<tr><td colspan="6"><h4>Your is empty</h4></td></tr></table>`;
+                html += `<tr><td colspan="6"><h4>Your cart is empty</h4></td></tr></table>`;
             }
             else{
                 html += `<tr><td colspan="6"><h4>Total price: $${total}</h4></td></tr></table>`;
