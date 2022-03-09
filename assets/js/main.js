@@ -505,7 +505,7 @@ document.querySelector("#list").addEventListener("change", filterChange)
             }
         })
     }
-    function cartCheck(){
+        function cartCheck(){
         let html = `<table><tr><td colspan="6"><h3>The cart is empty</h3></td></tr></table>`;
         let total = 0;
         if(articlesInCart != undefined || articlesInCart!=null){
@@ -518,12 +518,13 @@ document.querySelector("#list").addEventListener("change", filterChange)
                                     <td>${counter++}</td>
                                     <td><img src="${p.img}" alt="${p.name}"/></td>
                                     <td>${p.name}</td>
+                                    <td><button data-id="${c.id}" class="removeOne">-</button></td>
                                     <td>${c.quantity}</td>
+                                    <td><button data-id="${c.id}" class="addOne">+</button></td>
                                     <td>$${Math.round(p.price.newPrice * c.quantity * 100)/ 100}</td>
-                                    <td><button data-id="${c.id}" class="removeOne">Remove one</button></td>
-                                    <td><button data-id="${c.id}" class="removeAll">Remove</button></td>
+                                    <td><button data-id="${c.id}" class="removeAll">Remove All</button></td>
                                 </tr>`;
-                        total += Math.round(p.price.newPrice * c.quantity * 100)/ 100
+                        total += Math.round(p.price.newPrice * c.quantity * 1000)/ 1000
                     }
                     
                 }
@@ -537,6 +538,7 @@ document.querySelector("#list").addEventListener("change", filterChange)
         }
         $("#regionCart").html(html);
         $('.removeOne').click(removeOne);
+        $('.addOne').click(addOne)
         $('.removeAll').click(removeAll);
     }
     function removeOne(){
@@ -546,6 +548,24 @@ document.querySelector("#list").addEventListener("change", filterChange)
             if(a.id == check){
                 if(parseInt(a.quantity) > 1){
                     a.quantity = parseInt(a.quantity) - 1;
+                }
+                else{
+                    continue;
+                }
+            }
+            newCart.push(a);
+        }
+        setItemToLocalStorage("cart", newCart);
+        numberOfArticles();
+        cartCheck();
+    }
+    function addOne(){
+        let check = $(this).data("id");
+        let newCart = [];
+        for(let a of articlesInCart){
+            if(a.id == check){
+                if(parseInt(a.quantity) > 1){
+                    a.quantity = parseInt(a.quantity) + 1;
                 }
                 else{
                     continue;
