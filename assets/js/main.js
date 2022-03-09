@@ -529,10 +529,10 @@ document.querySelector("#list").addEventListener("change", filterChange)
                 }
             }
             if(total==0){
-                html += `<tr><td colspan="6"><h3>Your cart is empty</h3></td></tr></table>`;
+                html += `<tr><td colspan="6"><h4>Your cart is empty</h4></td></tr></table>`;
             }
             else{
-                html += `<tr><td colspan="6"><h3>Total price: $${total}</h3></td></tr></table>`;
+                html += `<tr><td colspan="6"><h4>Total price: $${total}</h4></td></tr></table>`;
             }   
         }
         $("#regionCart").html(html);
