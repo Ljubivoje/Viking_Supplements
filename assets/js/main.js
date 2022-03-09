@@ -11,33 +11,15 @@ function ajaxCallBack(filename, result){
 }
 function setItemToLocalStorage(name, data){
     localStorage.setItem(name, JSON.stringify(data));
-    }
+}
 function getItemFromLocalStorage(name){
     return JSON.parse(localStorage.getItem(name));
-    }
+}
 let arrayArticles = [];
 let articlesInCart = [];
-//MENU
-const body = document.querySelector("body");
-const navbar = document.querySelector(".navbar");
-const menuBtn = document.querySelector(".menu-btn");
-const cancelBtn = document.querySelector(".cancel-btn");
-menuBtn.onclick = ()=>{
-    navbar.classList.add("show");
-    menuBtn.classList.add("hide");
-    body.classList.add("disabled");
-}
-cancelBtn.onclick = ()=>{
-    body.classList.remove("disabled");
-    navbar.classList.remove("show");
-    menuBtn.classList.remove("hide");
-}
-window.onscroll = ()=>{
-    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-}
 window.onload=function(){
     let url = window.location.pathname;
-    if(url == "/Viking_Supplements/" || url == "/Viking_Supplements/index.html"){
+    if(url == "/" || url == "/index.html"){
         numberOfArticles()
         ajaxCallBack("assets/data/articles.json",function(result){
             ipisItems(result)  
@@ -48,7 +30,7 @@ window.onload=function(){
             numberOfArticles() 
         })
     }
-    if(url == "/Viking_Supplements/shop.html"){
+    if(url == "/" || url == "/shop.html"){
         numberOfArticles() 
         ajaxCallBack("assets/data/brands.json",function(result){
             ispisBrendova(result)
@@ -70,7 +52,7 @@ document.querySelector("#rangeValue").addEventListener("input", filterChange)
 document.querySelector("#search").addEventListener("keyup",filterChange)
 document.querySelector("#list").addEventListener("change", filterChange)
     }
-    if(url == "/Viking_Supplements/contact.html"){
+    if(url == "/" || url == "/contact.html"){
         ajaxCallBack("assets/data/menu.json",function(result){
             navMenu(result, ".menu-list")
             navMenu(result, ".list")
@@ -120,7 +102,7 @@ document.querySelector("#list").addEventListener("change", filterChange)
 	}
     });	
     }
-    if(url == "/Viking_Supplements/cart.html"){
+    if(url == "/" || url == "/cart.html"){
         ajaxCallBack("assets/data/articles.json",function(result){
             arrayArticles = getItemFromLocalStorage("articles");
             articlesInCart = getItemFromLocalStorage('cart')
@@ -206,7 +188,7 @@ document.querySelector("#list").addEventListener("change", filterChange)
         }
         });  
     }
-    if(url == "/Viking_Supplements/about.html"){
+    if(url == "/" || url == "/about.html"){
         ajaxCallBack("assets/data/menu.json",function(result){
             navMenu(result, ".menu-list")
             navMenu(result, ".list")
@@ -224,8 +206,26 @@ document.querySelector("#list").addEventListener("change", filterChange)
             <i id="cartImg" class="fas fa-shopping-cart"></i><span id="cartIspis"></span>
             </a>
             </li>`
-            document.querySelector(klasa).innerHTML=html;
+            const body = document.querySelector("body");
+            const navbar = document.querySelector(".navbar");
+            const menuBtn = document.querySelector(".menu-btn");
+            const cancelBtn = document.querySelector(".cancel-btn");
+            menuBtn.onclick = ()=>{
+                navbar.classList.add("show");
+                menuBtn.classList.add("hide");
+                body.classList.add("disabled");
+            }
+            cancelBtn.onclick = ()=>{
+                body.classList.remove("disabled");
+                navbar.classList.remove("show");
+                menuBtn.classList.remove("hide");
+            }
+            window.onscroll = ()=>{
+                this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+            }
+            document.querySelector(klasa).innerHTML+=html;
     }
+
     function ipisItems(data){
     let html="";
     for(let item of data){
@@ -505,8 +505,8 @@ document.querySelector("#list").addEventListener("change", filterChange)
             }
         })
     }
-        function cartCheck(){
-	let html = `<table><tr><td colspan="6"><h4>Your cart is empty</h4></td></tr></table>`;
+    function cartCheck(){
+        let html = `<table><tr><td colspan="6"><h4>Your cart is empty</h4></td></tr></table>`;
         let total = 0;
         if(articlesInCart != undefined || articlesInCart!=null){
             let counter = 1;
@@ -514,17 +514,17 @@ document.querySelector("#list").addEventListener("change", filterChange)
             for(let c of articlesInCart){
                 for(let p of arrayArticles){
                     if(c.id == p.id){
-                        html += `<tr>
-                                    <td>${counter++}</td>
-                                    <td><img src="${p.img}" alt="${p.name}"/></td>
-                                    <td>${p.name}</td>
-                                    <td><button data-id="${c.id}" class="removeOne">-</button></td>
-                                    <td>${c.quantity}</td>
-                                    <td><button data-id="${c.id}" class="addOne">+</button></td>
-                                    <td>$${Math.round(p.price.newPrice * c.quantity * 100)/ 100}</td>
-                                    <td><button data-id="${c.id}" class="removeAll">Remove All</button></td>
-                                </tr>`;
-                        total += Math.round(p.price.newPrice * c.quantity * 1000)/ 1000
+                        html +=  `<tr>
+                        <td>${counter++}</td>
+                        <td><img src="${p.img}" alt="${p.name}"/></td>
+                        <td>${p.name}</td>
+                        <td><button data-id="${c.id}" class="removeOne">-</button></td>
+                        <td>${c.quantity}</td>
+                        <td><button data-id="${c.id}" class="addOne">+</button></td>
+                        <td>$${Math.round(p.price.newPrice * c.quantity * 100)/ 100}</td>
+                        <td><button data-id="${c.id}" class="removeAll">Remove All</button></td>
+                    </tr>`
+                        total += Math.round(p.price.newPrice * c.quantity * 100)/ 100
                     }
                     
                 }
@@ -534,7 +534,7 @@ document.querySelector("#list").addEventListener("change", filterChange)
             }
             else{
                 html += `<tr><td colspan="6"><h4>Total price: $${total}</h4></td></tr></table>`;
-            }    
+            }   
         }
         $("#regionCart").html(html);
         $('.removeOne').click(removeOne);
