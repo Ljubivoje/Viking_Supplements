@@ -507,7 +507,6 @@ document.querySelector("#list").addEventListener("change", filterChange)
     }
         function cartCheck(){
         let total = 0;
-	let html = `<table><tr><td colspan="6"><h4>The cart is empty</h4></td></tr></table>`;
         if(articlesInCart != undefined || articlesInCart!=null){
             let counter = 1;
             html = "<table>";
