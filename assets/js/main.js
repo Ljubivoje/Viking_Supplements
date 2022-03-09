@@ -37,6 +37,7 @@ window.onscroll = ()=>{
 }
 window.onload=function(){
     let url = window.location.pathname;
+    console.log(url)
     if(url == "/" || url == "index.html"){
         numberOfArticles()
         ajaxCallBack("assets/data/articles.json",function(result){
