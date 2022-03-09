@@ -726,3 +726,18 @@ h5{
   padding-top: 15%;
 }
 }
+body .container #regionCart table tr th, body .container #regionCart table tr td {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+body .container #regionCart table {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 18px;
+}
+.container #regionCart table tr td img {
+  width: 50%;
+}
