@@ -546,6 +546,9 @@ textarea{
       align-items: center;
       display: flex;
   }
+  .item {
+    width: 40%;
+}
 }
 @media screen and (max-width:430px){
 .footer-basic ul {
@@ -570,7 +573,7 @@ color: white;
 font-size: 15px;
 }
 .item {
-  width: 40%;
+  width: 70%;
   text-align: center;
 }
 h5{
