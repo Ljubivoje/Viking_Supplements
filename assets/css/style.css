@@ -398,23 +398,26 @@ h3{
   opacity: 1;
 }
 .aboutItem{
-  width: 100%;
+  width: 50%;
 }
-#popup{
-  width: 70%;
+#popup {
+  width: 35%;
+  display: inline-block;
 }
 .productInfo{
-  width: 70%;
+  width: 100%;
 }
-#productImg{
-  width: 30%;
+#productImg {
+  width: 100%;
+  justify-content: center;
+  display: flex;
 }
 .productInfo h4{
   padding: 10px;
   border-bottom: 1px solid black;
 }
 .productInfo p{
-  padding: 20px;
+  padding: 15px;
 }
 #holder{
   display: flex;
@@ -468,9 +471,10 @@ textarea{
   display: flex;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 .innerProductText{
-  width: 50%;
+  width: 100%;
   font-size: 20px;
 }
 #black{
@@ -502,6 +506,7 @@ textarea{
 }
 .addToCart{
   font-size: 22px;
+  margin-bottom: 15px;
 }
 .bio{
   height: auto;
@@ -542,12 +547,15 @@ textarea{
     font-size: 17px;
   }
   #productImg {
-      width: 40%;
-      align-items: center;
-      display: flex;
-  }
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
   .item {
     width: 40%;
+}
+#popup {
+  width: 60%;
 }
 }
 @media screen and (max-width:430px){
@@ -557,10 +565,15 @@ textarea{
 .footer-basic li {
   padding: 0px 3px;
 }
+.innerProductText p{
+  font-size: 18px;
+}
 #list{
   font-size: 10px;
 }
-
+.productInfo p {
+  padding: 12px;
+}
 #titleInfo h1 {
 font-size: 1.7em;
 color: white;
@@ -588,7 +601,7 @@ h5{
 }
 .rangeSlide {
   padding: 20px 0px;
-  font-size: 13px;
+  font-size: 15px;
 }
 #title {
   font-size: 15px;
@@ -609,6 +622,9 @@ h5{
 .position{
   height: 15px;
 }
+#popup {
+  width: 80%;
+}
 }
 @media screen and (max-width:380px){
   .footer-basic ul {
@@ -617,12 +633,22 @@ h5{
 .list {
     display: block;
 }
+.productInfo p {
+  padding: 9px;
+}
+.innerProductText {
+  font-size: 10px;
+}
 #list{
   font-size: 9px;
 }
 .item {
   width: 80%;
   text-align: center;
+}
+#popup {
+  width: 80%;
+  display: inline-block;
 }
 #titleInfo h1 {
   font-size: 1.7em;
@@ -674,6 +700,12 @@ h5{
 .itemDescription {
     font-size: 13px;
 }
+.innerProductText p{
+  font-size: 17px;
+}
+.productInfo p {
+  padding: 7px;
+}
 .checkBoxes{
   font-size: 12px;
 }
@@ -714,6 +746,13 @@ h5{
 @media  screen and (max-width: 1030px){
 .infoText {
   font-size: 18px;
+}
+#popup {
+  width: 65%;
+}
+.innerProductText {
+  width: 100%;
+  font-size: 20px;
 }
 .navbar .logo a {
   font-size: 23px;
