@@ -103,7 +103,7 @@ document.querySelector("#list").addEventListener("change", filterChange)
     });	
     }
     if(url == "/Viking_Supplements/cart.html"){
-        ajaxCallBack("assets/data/articles.json",function(result){
+       ajaxCallBack("assets/data/articles.json",function(result){
             arrayArticles = getItemFromLocalStorage("articles");
             articlesInCart = getItemFromLocalStorage('cart')
             cartCheck();
@@ -182,8 +182,12 @@ document.querySelector("#list").addEventListener("change", filterChange)
             </div>
             <div class="active" id="overlay"></div>`
             document.querySelector("#zezanje").innerHTML=html;
+            document.querySelector("#closeButton").addEventListener('click',function(){
+                document.getElementById("b").style.display="none"
+                document.getElementById("overlay").style.display="none"
+                setTimeout("location.reload(true);",0)
+            })
             localStorage.removeItem('cart')
-            setTimeout("location.reload(true);",3000)
             cartCheck()
         }
         });  
