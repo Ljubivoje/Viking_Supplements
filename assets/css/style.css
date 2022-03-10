@@ -506,6 +506,7 @@ textarea{
   width: 30%;
 }
 #order{
+  padding-bottom: 80px;
   width: 60%;
   margin: 0px auto;
 }
@@ -555,12 +556,6 @@ body .container #regionCart table {
 .container #regionCart table tr td img {
   width: 100px;
 }
-/* #qnty{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-} */
-/* RESPONSIVE */
 @media screen and (max-width:770px){
   .container-title {
     padding-top: 15% !important;
@@ -586,7 +581,7 @@ body .container #regionCart table {
 }
 #regionCart {
   width: 100%;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 #regionForma{
   width: 100% !important;
@@ -903,3 +898,4 @@ body .container #regionCart table {
     padding-top: 25%;
   }
 }
+
