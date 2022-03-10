@@ -19,7 +19,7 @@ let arrayArticles = [];
 let articlesInCart = [];
 window.onload=function(){
     let url = window.location.pathname;
-    if(url == "/Viking_Supplements/" || url == "/Viking_Supplements/index.html"){
+    if(url == "/" || url == "/index.html"){
         numberOfArticles()
         ajaxCallBack("assets/data/articles.json",function(result){
             ipisItems(result)  
@@ -30,7 +30,7 @@ window.onload=function(){
             numberOfArticles() 
         })
     }
-    if(url == "/Viking_Supplements/shop.html"){
+    if(url == "/" || url == "/shop.html"){
         numberOfArticles() 
         ajaxCallBack("assets/data/brands.json",function(result){
             ispisBrendova(result)
@@ -52,7 +52,7 @@ document.querySelector("#rangeValue").addEventListener("input", filterChange)
 document.querySelector("#search").addEventListener("keyup",filterChange)
 document.querySelector("#list").addEventListener("change", filterChange)
     }
-    if(url == "/Viking_Supplements/contact.html"){
+    if(url == "/" || url == "/contact.html"){
         ajaxCallBack("assets/data/menu.json",function(result){
             navMenu(result, ".menu-list")
             navMenu(result, ".list")
@@ -102,7 +102,7 @@ document.querySelector("#list").addEventListener("change", filterChange)
 	}
     });	
     }
-    if(url == "/Viking_Supplements/cart.html"){
+    if(url == "/" || url == "/cart.html"){
         ajaxCallBack("assets/data/articles.json",function(result){
             arrayArticles = getItemFromLocalStorage("articles");
             articlesInCart = getItemFromLocalStorage('cart')
@@ -188,7 +188,7 @@ document.querySelector("#list").addEventListener("change", filterChange)
         }
         });  
     }
-    if(url == "/Viking_Supplements/about.html"){
+    if(url == "/" || url == "/about.html"){
         ajaxCallBack("assets/data/menu.json",function(result){
             navMenu(result, ".menu-list")
             navMenu(result, ".list")
@@ -359,11 +359,11 @@ document.querySelector("#list").addEventListener("change", filterChange)
             $(`#${item.id}`).click(function(){
                 html=`
                 <div class="popup active" id="popup">
+                <button id="closeButton">&times;</button>
                 <div id="productImg">
                     <img class="aboutItem" src='${item.img}'>
                 </div>
                 <div class="productInfo">
-                <button id="closeButton">&times;</button>
                 <div class="productText">
                 <div class="innerProductText">
                     <h4>${item.name}</h4>
