@@ -53,7 +53,7 @@ document.querySelector("#search").addEventListener("keyup",filterChange)
 document.querySelector("#list").addEventListener("change", filterChange)
     }
     if(url == "/Viking_Supplements/contact.html"){
-        ajaxCallBack("assets/data/menu.json",function(result){
+               ajaxCallBack("assets/data/menu.json",function(result){
             navMenu(result, ".menu-list")
             navMenu(result, ".list")
             numberOfArticles() 
