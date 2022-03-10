@@ -384,6 +384,10 @@ h3{
   padding-right: 20px;
   padding-top: 10px;
 }
+#regionForma{
+  width: 30%;
+  text-align: center;
+}
 #overlay{
   position: fixed;
   top: 0;
@@ -462,6 +466,7 @@ textarea{
 }
 .txt-error{
   color: red;
+  font-size: 18px;
 }
 .infoText{
   padding: 20px;
@@ -533,10 +538,32 @@ textarea{
 .info{
   margin-top: 50px;
 }
+body .container #regionCart table tr th, body .container #regionCart table tr td {
+  padding: 10px 20px;
+  border-collapse: collapse;
+  text-align: center;
+}
+body .container #regionCart table tr th, body .container #regionCart table tr {
+  border: 1px solid black;
+}
+body .container #regionCart table {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 18px;
+}
+.container #regionCart table tr td img {
+  width: 100px;
+}
+/* #qnty{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+} */
 /* RESPONSIVE */
 @media screen and (max-width:770px){
   .container-title {
-    padding-top: 15%;
+    padding-top: 15% !important;
   }
   .addToCart {
     font-size: 17px;
@@ -557,10 +584,56 @@ textarea{
 #popup {
   width: 60%;
 }
+#regionCart {
+  width: 100%;
+  padding-bottom: 30px;
+}
+#regionForma{
+  width: 100% !important;
+  text-align: center;
+}
+.container {
+  width: 90%;
+  padding: 100px 0px;
+  margin: 0px auto;
+  display: inline-block;
+}
+.removeOne, .addOne{
+  font-size: 20px;
+}
 }
 @media screen and (max-width:430px){
+body .container #regionCart table tr th, body .container #regionCart table tr td {
+  padding: 10px 7px;
+}
+.container #regionCart table tr td img {
+  width: 50px;
+}
+.w-100LowRez{
+  width: 90% !important;
+}
+.removeOne, .addOne{
+  font-size: 16px !important;
+}
 .footer-basic ul {
   font-size: 15px;
+}
+#holder {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#form {
+  width: 60%;
+}
+#bioBackground #aboutMe p{
+  font-size: 0.75em;
+}
+.container-title {
+  padding-top: 20% !important;
+}
+#info {
+  width: 100%;
 }
 .footer-basic li {
   padding: 0px 3px;
@@ -627,11 +700,38 @@ h5{
 }
 }
 @media screen and (max-width:380px){
-  .footer-basic ul {
+.footer-basic ul {
     font-size: 13px;
+  }
+  #bioBackground #aboutMe p{
+    font-size: 0.8em;
+  }
+  #aboutMe #pic{
+    height: 300px;
   }
 .list {
     display: block;
+}
+.removeOne, .addOne{
+  font-size: 14px !important;
+}
+body .container #regionCart table {
+  font-size: 15px;
+}
+#order div{
+  width: 80%;
+}
+.txt-error {
+  font-size: 14px;
+}
+#order div input[type=text], form div input[type=mail], form div label, form div span, textarea, input[type=submit], .check, #list2 {
+  width: 100%;
+  padding: 5px 5px;
+  margin: 10px 0px;
+  border-radius: 7px;
+}
+.removeAll{
+  font-size: 14px;
 }
 .productInfo p {
   padding: 9px;
@@ -695,13 +795,25 @@ h5{
 .position{
   height: 15px;
 }
+.container-title {
+  padding-top: 25% !important;
+}
 }
 @media screen and (max-width: 330px){
 .itemDescription {
     font-size: 13px;
 }
+body .container #regionCart table {
+  font-size: 11px;
+}
+.removeAll{
+  font-size: 10px;
+}
 .innerProductText p{
   font-size: 17px;
+}
+#bioBackground #aboutMe p{
+  font-size: 0.65em;
 }
 .productInfo p {
   padding: 7px;
@@ -709,9 +821,28 @@ h5{
 .checkBoxes{
   font-size: 12px;
 }
+.removeOne, .addOne{
+  font-size: 14px !important;
+}
 .item {
   width: 80%;
   text-align: center;
+}
+#order div{
+  width: 80%;
+}
+.txt-error {
+  font-size: 11px;
+}
+#order div input[type=text], form div input[type=mail], form div label, form div span, textarea, input[type=submit], .check, #list2 {
+  padding: 5px 5px;
+  margin: 10px 0px;
+}
+#form {
+  width: 50%;
+}
+.infoText{
+  font-size: 16px !important;
 }
 #leftSide{
   width: 22%;
@@ -744,42 +875,31 @@ h5{
 }
 }
 @media  screen and (max-width: 1030px){
-.infoText {
-  font-size: 18px;
-}
-#popup {
-  width: 65%;
-}
-.innerProductText {
-  width: 100%;
-  font-size: 20px;
-}
-.navbar .logo a {
-  font-size: 23px;
-}
-.menu-list li a {
-  font-size: 16px;
-  margin-left: 17px;
-}
-#title {
-  font-size: 12px;
-}
-.container-title {
-  padding-top: 15%;
-}
-}
-body .container #regionCart table tr th, body .container #regionCart table tr td {
-  padding: 10px 20px;
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-}
-body .container #regionCart table {
-  width: 100%;
-  border: 1px solid black;
-  border-collapse: collapse;
-  font-size: 18px;
-}
-.container #regionCart table tr td img {
-  width: 50%;
+  .infoText {
+    font-size: 18px;
+  }
+  #popup {
+    width: 65%;
+  }
+  #regionForma{
+    width: 35%;
+    text-align: center;
+  }
+  .innerProductText {
+    width: 100%;
+    font-size: 20px;
+  }
+  .navbar .logo a {
+    font-size: 23px;
+  }
+  .menu-list li a {
+    font-size: 16px;
+    margin-left: 17px;
+  }
+  #title {
+    font-size: 12px;
+  }
+  .container-title {
+    padding-top: 25%;
+  }
 }
