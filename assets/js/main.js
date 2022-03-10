@@ -199,7 +199,7 @@ document.querySelector("#list").addEventListener("change", filterChange)
     function navMenu(navigation, klasa){
             let html="";
                 for(let nav of navigation){
-                    html+=`<li><a href="${nav.href}">${nav.name}</a></li>`
+                    html+=`<li><a href="${nav.href}" target="_blank">${nav.name}</a></li>`
                 }
             html+=`<li>
             <a href="cart.html">
