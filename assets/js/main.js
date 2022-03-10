@@ -64,12 +64,14 @@ document.querySelector("#list").addEventListener("change", filterChange)
 	var username = document.getElementById('username').value
 	var email = document.getElementById('mail').value
 	var subject = document.getElementById('subject').value
+    var text=document.getElementById('napomena').value
 	var nameCheck = /^[A-ZČĆŠĐŽ][a-zčćžđš]{2,15}\s[A-ZČĆŠĐŽ][a-zčćžđš]{2,15}$/
 	var mailCheck = /^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}$/
 	var subjectCheck = /^[a-zA-Z]{2,}$/
 	var usernameBool = false;
 	var emailBool = false;
 	var subjectBool = false;
+    var textareaBool = false
 	
 	if(nameCheck.test(username)){
 	document.getElementById('name-error').innerHTML = "";
@@ -95,10 +97,34 @@ document.querySelector("#list").addEventListener("change", filterChange)
 		document.getElementById('subject-error').innerHTML = "*Invalid subject,It has to start with upper case and must be longer than 2 characters*";
 		subjectBool = false
 	}
-	if(usernameBool&&emailBool&&subjectBool)
+    if(text==""){
+        document.getElementById('message-error').innerHTML = "*Please fill in the message.*";
+        textareaBool = false
+    }
+    else{
+        document.getElementById('message-error').innerHTML = "";
+        textareaBool = true
+    }
+	if(usernameBool&&emailBool&&subjectBool&&textareaBool)
 	{
-		alert("You have succesfuly made an appointment");
-		setTimeout("location.reload(true);",0)
+        let html='';
+        html=`<div class="popup active" id="b">
+            <div class="productInfo">
+            <button id="closeButton">&times;</button>
+            <div class="productText">
+            <div class="innerProductText">
+                <p class='popupText'>You have succesfuly sent the message</p>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="active" id="overlay"></div>`
+        document.querySelector("#zezanje").innerHTML=html;
+        document.querySelector("#closeButton").addEventListener('click',function(){
+            document.getElementById("b").style.display="none"
+            document.getElementById("overlay").style.display="none"
+            setTimeout("location.reload(true);",0)
+        })
 	}
     });	
     }
