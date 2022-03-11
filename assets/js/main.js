@@ -168,7 +168,7 @@ document.querySelector("#list").addEventListener("change", filterChange)
             emailBool = true;
         }
         else{
-            document.getElementById('mail-error').innerHTML = "*Invalid E-Mail*";
+            document.getElementById('mail-error').innerHTML = "*Invalid E-Mail, e.g name@domain.com*";
             emailBool = false;
         }
         if(phoneNumerCheck.test(phoneNumber)){
@@ -176,7 +176,7 @@ document.querySelector("#list").addEventListener("change", filterChange)
             phoneBool = true
             }
         else{
-            document.getElementById('phone-error').innerHTML = "*Invalid phone number*";
+            document.getElementById('phone-error').innerHTML = "*Invalid phone number,e.g 06x-xxxx-xxx*";
             phoneBool = false
         }
         if(dropList==0){
@@ -191,7 +191,7 @@ document.querySelector("#list").addEventListener("change", filterChange)
             checkBool=true
         })
         if(!checkBool){
-            document.getElementById('checkbox-error').innerHTML = "You have to agree with out terms and coditions";
+            document.getElementById('checkbox-error').innerHTML = "You have to agree with our terms and coditions";
         }
         if(usernameBool&&emailBool&&listBool&&phoneBool&&checkBool)
         {
