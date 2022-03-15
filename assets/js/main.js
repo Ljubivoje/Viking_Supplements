@@ -497,23 +497,23 @@ document.querySelector("#list").addEventListener("change", filterChange)
         return data;
     }
     function filterCat(data){
-        let selectedZanrovi = [];
+        let selectedKategorije = [];
         $('.cat:checked').each(function(el){
-            selectedZanrovi.push(parseInt($(this).val()))
+            selectedKategorije.push(parseInt($(this).val()))
             console.log((parseInt($(this).val())))
         });
-        if(selectedZanrovi.length != 0){
-            return data.filter(x => x.categoryId.some(y => selectedZanrovi.includes(y)));
+        if(selectedKategorije.length != 0){
+            return data.filter(x => x.categoryId.some(y => selectedKategorije.includes(y)));
         }
         return data;
     }
     function brandFilter(data){
-        let selectedBrands = [];
+        let selectedBrendovi = [];
         $('.brand:checked').each(function(){
-            selectedBrands.push(parseInt($(this).val()));
+            selectedBrendovi.push(parseInt($(this).val()));
         });
-        if(selectedBrands.length != 0){
-            return data.filter(x => selectedBrands.includes(x.brandId));	
+        if(selectedBrendovi.length != 0){
+            return data.filter(x => selectedBrendovi.includes(x.brandId));	
         }
         return data;
     }
@@ -563,7 +563,7 @@ document.querySelector("#list").addEventListener("change", filterChange)
                 html += `<tr><td colspan="6"><h4>Your cart is empty</h4></td></tr></table>`;
             }
             else{
-                html += `<tr><td colspan="6"><h4>Total price: $${total}</h4></td></tr></table>`;
+                html += `<tr><td colspan="6"><h4>Total price: $${total.toFixed(2)}</h4></td></tr></table>`;
             }   
         }
         $("#regionCart").html(html);
