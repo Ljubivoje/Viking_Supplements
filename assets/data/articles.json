@@ -63,7 +63,7 @@
             "newPrice":13.50
         },
         "img":"assets/images/img5.jpg",
-        "discount":2,
+        "discount":true,
         "categoryId":[4],
         "brandId":1,
         "suggested": false,
@@ -91,7 +91,7 @@
             "newPrice":10.26
         },
         "img":"assets/images/img7.jpg",
-        "discount":2,
+        "discount":true,
         "categoryId":[4],
         "brandId":2,
         "suggested": false,
@@ -147,7 +147,7 @@
             "newPrice":77.61
         },
         "img":"assets/images/img11.jpg",
-        "discount":3,
+        "discount":true,
         "categoryId":[1],
         "brandId":4,
         "suggested": false,
@@ -245,7 +245,7 @@
             "newPrice":2.37
         },
         "img":"assets/images/img18.jpg",
-        "discount":1,
+        "discount":true,
         "categoryId":[1,5],
         "brandId":1,
         "suggested": false,
@@ -315,7 +315,7 @@
             "newPrice":12.25
         },
         "img":"assets/images/img23.jpg",
-        "discount":1,
+        "discount":true,
         "categoryId":[3],
         "brandId":2,
         "suggested": false,
@@ -329,7 +329,7 @@
             "newPrice":27.00
         },
         "img":"assets/images/img24.jpg",
-        "discount":2,
+        "discount":true,
         "categoryId":[5],
         "brandId":2,
         "suggested": false,
@@ -399,7 +399,7 @@
             "newPrice":22.50
         },
         "img":"assets/images/img29.jpg",
-        "discount":2,
+        "discount":true,
         "categoryId":[5],
         "brandId":3,
         "suggested": false,
