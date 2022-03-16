@@ -86,7 +86,7 @@ document.querySelector("#list").addEventListener("change", filterChange)
 		emailBool = true;
 	}
 	else{
-		document.getElementById('mail-error').innerHTML = "*Invalid E-Mail*";
+		document.getElementById('mail-error').innerHTML = "*Invalid E-Mail, e.g name@domain.com*";
 		emailBool = false;
 	}
 	if(subjectCheck.test(subject)){
