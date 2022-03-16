@@ -399,7 +399,7 @@ document.querySelector("#list").addEventListener("change", filterChange)
                     <h4>${item.name}</h4>
                     <p>${item.text}</p>
                     ${staraCena(item.price.oldPrice)}
-                    <p>$${item.price.newPrice}</p>
+                    <p>Price: $${item.price.newPrice}</p>
                     <button data-id="${item.id}" class="addToCart">Add to cart</button>
                 </div>
                 </div>
